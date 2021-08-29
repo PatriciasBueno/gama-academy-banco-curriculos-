@@ -30,6 +30,4 @@ app.get('/index.css', (req, res) => {
 })
 
 // Listening
-app.listen(process.env.APP_PORT || 5000, function () {
-	console.log(`Example app listening at http://localhost:${port}`)
-})
+app.listen(process.env.APP_PORT || 5000)
