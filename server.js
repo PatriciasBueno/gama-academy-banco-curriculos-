@@ -3,7 +3,6 @@ const express = require('express');
 const bodyParser = require('body-parser')
 
 const app = express();
-const port = process.env.APP_PORT
 const swaggerUi = require('swagger-ui-express')
 const swaggerFile = require('./swagger_output.json')
 const {MongoClient} = require("mongodb");
@@ -31,6 +30,6 @@ app.get('/index.css', (req, res) => {
 })
 
 // Listening
-app.listen(port, function () {
+app.listen(process.env.APP_PORT || 5000, function () {
 	console.log(`Example app listening at http://localhost:${port}`)
 })
