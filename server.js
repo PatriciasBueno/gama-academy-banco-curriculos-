@@ -30,4 +30,4 @@ app.get('/index.css', (req, res) => {
 })
 
 // Listening
-app.listen(process.env.APP_PORT || 5000)
+app.listen(process.env.PORT || 8080)
