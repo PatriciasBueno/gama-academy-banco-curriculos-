@@ -1,0 +1,13 @@
+form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.required{
+    color: #ff0000;
+}
+
+h4{
+    text-align: justify;
+    border-bottom: 2px solid #acb0b1;;
+}

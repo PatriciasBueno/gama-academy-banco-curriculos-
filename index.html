@@ -1,0 +1,191 @@
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+            crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/index.css"/>
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center">JobsNET</h1>
+    <h3 class="text-center">Cadastro de curriculos</h3>
+    <div class="col-12">
+        <div class="alert" role="alert">
+        </div>
+    </div>
+    <form action="/cadastro" method="POST" id="form">
+        <h4>Dados Pessoais</h4>
+        <div class="row mb-3">
+            <div class="form-group col-6">
+                <label for="nome">Nome Completo<span class="required">*</span></label>
+                <input type="text" id="nome" name="nome" class="form-control" required="required"/>
+            </div>
+            <div class="form-group col-6">
+                <label for="cargo">Cargo Pretendido<span class="required">*</span></label>
+                <input type="text" id="cargo" name="cargo" class="form-control" required="required"/>
+            </div>
+        </div>
+        <!-- Segunda Linha -->
+        <div class="row mb-3">
+            <div class="form-group col-4">
+                <label for="data">Data Nascimento<span class="required">*</span></label>
+                <input type="text" name="data" id="data" class="form-control" required="required">
+            </div>
+            <div class="form-group col-4">
+                <label for="estado_civil">Estado Civil</label>
+                <select name="estado_civil" id="estado_civil" class="form-control">
+                    <option value="">Selecione</option>
+                    <option value="Solteiro">Solteiro(a)</option>
+                    <option value="Casado">Casado(a)</option>
+                    <option value="Divorciado">Divorciado(a)</option>
+                    <option value="Viúvo">Viúvo(a)</option>
+                    <option value="Amasiado">Amasiado(a)</option>
+                </select>
+            </div>
+            <div class="form-group col-4">
+                <label for="sexo">Sexo</label>
+                <select name="sexo" id="sexo" class="form-control">
+                    <option value="">Selecione</option>
+                    <option value="F">Feminino</option>
+                    <option value="M">Masculino</option>
+                </select>
+            </div>
+        </div>
+        <!-- Terceira Linha -->
+        <h4>Contato</h4>
+        <div class="row mb-3">
+            <div class="form-group col-5">
+                <label for="email">E-mail<span class="required">*</span></label>
+                <input type="email" id="email" class="form-control" placeholder="EX: meunome@exemplo.com"
+                       required="required"/>
+            </div>
+            <div class="form-group col-4">
+                <label for="cel">Celular<span class="required">*</span></label>
+                <input type="text" name="cel" id="cel" class="form-control" required="required"/>
+            </div>
+            <div class="form-group col-3">
+                <label for="fixo">Telefone Fixo</label>
+                <input type="text" name="fixo" id="fixo" class="form-control"/>
+            </div>
+        </div>
+        <!-- Quarta Linha -->
+        <h4>Endereço</h4>
+        <div class="row mb-3">
+            <div class="form-group col-4">
+                <label for="cep">CEP<span class="required">*</span></label>
+                <input type="text" name="cep" id="cep" class="form-control" required="required"/>
+            </div>
+            <div class="form-group col-6">
+                <label for="rua">Rua<span class="required">*</span></label>
+                <input type="text" name="rua" id="rua" class="form-control"
+                       placeholder="EX: Nome da rua, 00. Bloco 0 AP 0. " required="required"/>
+            </div>
+            <div class="form-group col-2">
+                <label for="numero">Número<span class="required">*</span></label>
+                <input type="text" name="numero" id="numero" class="form-control" required="required"/>
+            </div>
+        </div>
+        <!-- Quinta Linha -->
+        <div class="row mb-3">
+            <div class="form-group col-3">
+                <label for="complemento">Complemento</label>
+                <input type="text" name="complemento" id="complemento" class="form-control"/>
+            </div>
+            <div class="form-group col-3">
+                <label for="bairro">Bairro<span class="required">*</span></label>
+                <input type="text" name="bairro" id="bairro" class="form-control" required="required"/>
+            </div>
+            <div class="form-group col-3">
+                <label for="cidade">Cidade<span class="required">*</span></label>
+                <input type="text" name="cidade" id="cidade" class="form-control" required="required"/>
+            </div>
+            <div class="form-group col-3">
+                <label for="estado">Estado<span class="required">*</span></label>
+                <select name="estado" id="estado" class="form-control" required="required">
+                    <option value="">Selecione</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+        </div>
+        <!-- Sexta Linha -->
+        <h4> Documentos </h4>
+        <div class="row mb-3">
+            <div class="form-group col-6">
+                <label for="identidade">Identidade<span class="required">*</span></label>
+                <input type="text" name="identidade" id="identidade" class="form-control" required="required"/>
+            </div>
+            <div class="form-group col-6">
+                <label for="cpf">CPF<span class="required">*</span></label>
+                <input type="text" name="cpf" id="cpf" class="form-control" required="required"/>
+            </div>
+        </div>
+
+
+        <!-- Setima Linha -->
+        <div class="row mb-3">
+            <div class="form-group col-6">
+                <label for="habilitacao">Possui Habilitação<span class="required">*</span></label>
+                <select name="habilitacao" id="habilitacao" class="form-control" required="required">
+                    <option value="">Selecione</option>
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+            </div>
+            <div class="form-group col-6">
+                <label for="veiculo">Possui Veiculo<span class="required">*</span></label>
+                <select name="veiculo" id="veiculo" class="form-control" required="required">
+                    <option value="">Selecione</option>
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+            </div>
+        </div>
+        <div class="row text-center mb-3">
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar!</button>
+            </div>
+        </div>
+    </form>
+
+    <script>
+		src = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+		integrity = "sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+		crossorigin = "anonymous"
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="/index.js"></script>
+</div>
+</body>
+</html>

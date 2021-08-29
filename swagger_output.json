@@ -1,0 +1,150 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "REST API",
+    "description": ""
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "tags": [],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/cadastro": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "nome",
+            "in": "body",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cargo",
+            "in": "body",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "data",
+            "in": "body",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "estado_civil",
+            "in": "body",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sexo",
+            "in": "body",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "email",
+            "in": "body",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cel",
+            "in": "body",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "fixo",
+            "in": "body",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "cep",
+            "in": "body",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "rua",
+            "in": "body",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "numero",
+            "in": "body",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "complemento",
+            "in": "body",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "bairro",
+            "in": "body",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cidade",
+            "in": "body",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "estado",
+            "in": "body",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "identidade",
+            "in": "body",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cpf",
+            "in": "body",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "habilitacao",
+            "in": "body",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "veiculo",
+            "in": "body",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    }
+  },
+  "definitions": {}
+}
